@@ -1,6 +1,8 @@
-#Hardest sudoku of the world solved in seconds!
+
+# Hardest sudoku in history solved in 1.6 seconds!
 
 import numpy as np
+import time
 
 grid = [[8,0,0,0,0,0,0,0,0],
         [0,0,3,6,0,0,0,0,0],
@@ -13,6 +15,7 @@ grid = [[8,0,0,0,0,0,0,0,0],
         [0,9,0,0,0,0,4,0,0]]
 
 #print(grid)
+start_time = time.time()
 print("\n Inicial: \n")
 print(np.matrix(grid))
 
@@ -46,5 +49,6 @@ def solve() :
         print("\n Solucion: \n")
         print(np.matrix(grid))
         print("\n")
-
+        print("Time taken: --- %s seconds ---" % (time.time() - start_time))
 solve()
+
