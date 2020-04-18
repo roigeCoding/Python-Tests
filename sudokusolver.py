@@ -1,3 +1,5 @@
+#Hardest sudoku of the world solved in seconds!
+
 import numpy as np
 
 grid = [[8,0,0,0,0,0,0,0,0],
